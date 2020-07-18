@@ -1,0 +1,31 @@
+---
+# This file describes a set of signal flag images.
+# See https://github.com/signal-flags/signal-flag-images.
+
+description:
+  short: Square flags in natural colours with outlines.
+  full: |
+    These flags and pennants are recommended for use in the US and elsewhere
+    where square letter flags are used.
+    All flags and pennants have outlines so they are suitable for display or
+    printing on a white background.
+
+    Colours and designs have been selected to be similar to 'real' flags and
+    pennants in common use.
+
+license:
+  spdx: Unlicense
+  file: 010-LICENSE
+  link: https://unlicense.org/
+
+generated:
+  date: 2020-07-18 
+  link: https://github.com/signal-flags/signal-flags
+  version: 0.9.2-dev
+  engine: node v12.18.2
+
+options:
+  outline: true
+  viewBox:
+    default: [180, 180]
+    swallowtail: [180, 180]

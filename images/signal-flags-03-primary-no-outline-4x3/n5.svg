@@ -1,5 +1,0 @@
-<?xml version="1.0" encoding="UTF-8" ?>
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 180 90">
-<path d="M0,0L90,15V75L0,90Z" fill="yellow"/>
-<path d="M90,15L180,30V60L90,75Z" fill="blue"/>
-</svg>
