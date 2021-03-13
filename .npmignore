@@ -1,0 +1,8 @@
+# .npmignore
+
+# Only include images and supporting files.
+*
+!LICENSE
+!README.md
+!package.json
+!signal-flags.*
