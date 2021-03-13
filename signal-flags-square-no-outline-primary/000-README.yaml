@@ -1,0 +1,29 @@
+---
+# This file describes a set of signal flag images.
+# See https://github.com/signal-flags/signal-flag-images.
+
+description:
+  short: Square flags in primary colours without outlines.
+  full: |
+    The alphabet (A-Z) flags are square.
+
+    Images do not have outlines so do not work well on a white background.
+
+    Primary colours have been used which may not look like real flags and
+    pennants on screen or when printed.
+
+license:
+  spdx: Unlicense
+  file: LICENSE
+  link: https://unlicense.org/
+
+generated:
+  date: 2020-11-03 
+  link: https://github.com/signal-flags/signal-flags-js
+  version: 2.0.0
+  engine: undefined
+
+options:
+  colors: primary
+  outline: false
+  shape: square

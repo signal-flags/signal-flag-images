@@ -1,6 +1,37 @@
 # Signal Flags files
 
-International Code of Signals Flag images.
+> International Code of Signals Flag images.
+
+## Quick start
+
+### Download signal flag images
+
+You can download a zip archive containing all our images here:
+https://github.com/signal-flags/signal-flag-images/releases.
+
+### Extract the files
+
+Software to extract zip archives is built in to many operating systems including
+Windows, MacOS, and most flavours of Linux.
+
+### Locate the files you want
+
+The main designs are included in the four folders
+
+  - signal-flags-outline
+  - signal-flags-no-outline
+  - signal-flags-square-outline
+  - signal-flags-square-no-outline
+
+We have also included images with square alphabet flags in primary colours; this
+is the format used on
+[WikiPedia](https://en.wikipedia.org/wiki/International_maritime_signal_flags)
+and (except for the swallowtail flags A and B) in
+[Flags Of the World](https://www.fotw.info/flags/xf~ics.html).
+
+  - signal-flags-square-no-outline-primary
+
+## Documentation
 
 These images are free to use: see https://unlicense.org/.
 The images were created on 2020-07-18 using `signal-flags` version
@@ -17,19 +48,8 @@ used internationally:
 - Various flags defined in the Racing Rules of Sailing (Black Flag for starts,
   Blue and Yellow flags for match racing and umpires' flags).
 
-Images are provided in the SVG vector format and eight sets of flag images are
+Images are provided in the SVG vector format and five sets of flag images are
 included with the following options:
 - with or without outlines for ease of use in print or on screen
 - 4x3 and square shapes for alphabet flags
-- 'natural' or in 'primary' colours.
-
-Images are stored in folders as below.
-
-* `00-rect-natural-outline`
-* `01-rect-natural-no`
-* `10-rect-primary-outline`
-* `11-rect-primary-no`
-* `20-square-natural-outline`
-* `21-square-natural-no`
-* `30-square-primary-outline`
-* `31-square-primary-no`
+- square alphabet flags in primary colours

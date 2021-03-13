@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 180">
+<path fill="#ffd100" d="M120,90L0,0H240Z"/>
+<path fill="#005eb8" d="M120,90L240,0V180Z"/>
+<path fill="#c8102e" d="M120,90L240,180H0Z"/>
+<path fill="#2d2926" d="M120,90L0,180V0Z"/>
+</svg>

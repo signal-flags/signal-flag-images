@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="UTF-8" ?>
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 180 180">
-<path fill="red" d="M0,0H60V180H0Z"/>
-<path fill="white" d="M60,0H120V180H60Z"/>
-<path fill="blue" d="M120,0H180V180H120Z"/>
-<path fill="none" stroke="black" stroke-width="1" d="M0.5,0.5H179.5V179.5H0.5Z"/>
-</svg>
