@@ -9,9 +9,9 @@
     "signal flags"
   ],
   "scripts": {
-    "ci": "test",
+    "ci": "npm run test",
     "build": "node ./bin/build && prettier . --write",
-    "test": "mocha --verbose"
+    "test": "prettier . --check && mocha --verbose"
   },
   "repository": {
     "type": "git",
