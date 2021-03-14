@@ -1,0 +1,19 @@
+---
+description:
+  short: Square flags in natural colours with outlines.
+  full: |
+    The alphabet (A-Z) flags are square.
+
+    All images have outlines so they are suitable for display or
+    printing on a white background.
+
+    Colours have been selected to appear similar to real flags and pennants in
+    common use.
+
+license:
+  spdx: Unlicense
+  file: LICENSE
+  link: https://unlicense.org/
+
+options:
+  shape: square

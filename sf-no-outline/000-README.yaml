@@ -3,12 +3,11 @@
 # See https://github.com/signal-flags/signal-flag-images.
 
 description:
-  short: Square flags in natural colours with outlines.
+  short: Rectangular flags in natural colours without outlines.
   full: |
-    The alphabet (A-Z) flags are square.
+    The alphabet (A-Z) flags are rectangular with a 4x3 aspect ratio.
 
-    All images have outlines so they are suitable for display or
-    printing on a white background.
+    Images do not have outlines so do not work well on a white background.
 
     Colours have been selected to appear similar to real flags and pennants in
     common use.
@@ -18,11 +17,12 @@ license:
   file: LICENSE
   link: https://unlicense.org/
 
+version: 2.1.0
+
 generated:
-  date: 2020-11-03 
+  by: Signal Flags v2.0.1
+  date: 2021-03-14
   link: https://github.com/signal-flags/signal-flags-js
-  version: 2.0.0
-  engine: undefined
 
 options:
-  shape: square
+  outline: false
