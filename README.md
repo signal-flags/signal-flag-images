@@ -7,7 +7,7 @@
 ### Download
 
 Download a zip archive containing
-[version 2.1.0](https://github.com/signal-flags/signal-flag-images/archive/v2.1.0.zip)
+[version 2.1.1](https://github.com/signal-flags/signal-flag-images/archive/v2.1.1.zip)
 of our images.
 
 For other versions and a `.tar.gz` dowload option see the
@@ -87,7 +87,7 @@ included with the following options:
 - 4x3 and square shapes for alphabet flags
 - square alphabet flags in primary colours
 
-These images were created on 14 March 2021 using
-`signal-flags` version 2.0.1.
+These images were created on 15 March 2021 using
+`signal-flags` version 2.0.2.
 For more information and resources see the
 [Signal Flags website](https://signalflags.org/).

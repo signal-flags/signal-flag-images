@@ -2,5 +2,5 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 180">
 <path fill="#fff" d="M0,0V60H160Z"/>
 <path fill="#2d2926" d="M0,60V120H160L240,90L160,60Z"/>
-<path fill="#fff" d="M0,180V120H240Z"/>
+<path fill="#fff" d="M0,180V120H160Z"/>
 </svg>

@@ -10,9 +10,9 @@
       "link": "https://unlicense.org/"
     },
     "generated": {
-      "date": "2021-03-14",
+      "date": "2021-03-15",
       "link": "https://github.com/signal-flags/signal-flags-js",
-      "version": "2.0.1"
+      "version": "2.0.2"
     }
   },
   "svg": {
@@ -55,7 +55,7 @@
     "ap": "<svg viewBox=\"0 0 360 180\">\n<path fill=\"#c8102e\" d=\"M0,0L72,12V168L0,180Z\"/>\n<path fill=\"#fff\" d=\"M72,12L144,24V156L72,168Z\"/>\n<path fill=\"#c8102e\" d=\"M144,24L216,36V144L144,156Z\"/>\n<path fill=\"#fff\" d=\"M216,36L288,48V132L216,144Z\"/>\n<path fill=\"#c8102e\" d=\"M288,48L360,60V120L288,132Z\"/>\n</svg>",
     "s1": "<svg viewBox=\"0 0 240 180\">\n<path fill=\"#ffd100\" d=\"M0,37.5V142.5L140,90Z\"/>\n<path fill=\"#005eb8\" d=\"M0,0L240,90L0,180ZM0,37.5V142.5L140,90L0,37.5\"/>\n</svg>",
     "s2": "<svg viewBox=\"0 0 240 180\">\n<path fill=\"#005eb8\" d=\"M0,0L100,37.5V142.5L0,180Z\"/>\n<path fill=\"#fff\" d=\"M100,37.5L240,90L100,142.5Z\"/>\n</svg>",
-    "s3": "<svg viewBox=\"0 0 240 180\">\n<path fill=\"#fff\" d=\"M0,0V60H160Z\"/>\n<path fill=\"#2d2926\" d=\"M0,60V120H160L240,90L160,60Z\"/>\n<path fill=\"#fff\" d=\"M0,180V120H240Z\"/>\n</svg>",
+    "s3": "<svg viewBox=\"0 0 240 180\">\n<path fill=\"#fff\" d=\"M0,0V60H160Z\"/>\n<path fill=\"#2d2926\" d=\"M0,60V120H160L240,90L160,60Z\"/>\n<path fill=\"#fff\" d=\"M0,180V120H160Z\"/>\n</svg>",
     "black": "<svg viewBox=\"0 0 240 180\">\n<path fill=\"#2d2926\" d=\"M0,0H240V180H0Z\"/>\n</svg>",
     "blackwhite": "<svg viewBox=\"0 0 240 180\">\n<path fill=\"#2d2926\" d=\"M0,0H120V180H240V90H0V0\"/>\n<path fill=\"#fff\" d=\"M240,0H120V180H0V90H240V0\"/>\n</svg>",
     "blue": "<svg viewBox=\"0 0 240 180\">\n<path fill=\"#005eb8\" d=\"M0,0H240V180H0Z\"/>\n</svg>",

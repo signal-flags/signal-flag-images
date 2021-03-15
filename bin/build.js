@@ -11,6 +11,7 @@ const { mkdirSync, readFileSync, readdirSync, writeFileSync } = require('fs');
 const { resolve } = require('path');
 const { load } = require('js-yaml');
 
+// const SignalFlags = require('../../signal-flags-js');
 const SignalFlags = require('signal-flags');
 
 const { version } = require('../package.json');

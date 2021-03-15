@@ -21,8 +21,8 @@ license:
 version: 2.1.0
 
 generated:
-  by: Signal Flags v2.0.1
-  date: 2021-03-14
+  by: Signal Flags v2.0.2
+  date: 2021-03-15
   link: https://github.com/signal-flags/signal-flags-js
 
 options:
