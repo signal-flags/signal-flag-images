@@ -10,9 +10,9 @@
       "link": "https://unlicense.org/"
     },
     "generated": {
-      "date": "2021-03-15",
+      "date": "2021-03-16",
       "link": "https://github.com/signal-flags/signal-flags-js",
-      "version": "2.0.2"
+      "version": "2.1.0"
     }
   },
   "svg": {

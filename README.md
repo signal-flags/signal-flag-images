@@ -7,7 +7,7 @@
 ### Download
 
 Download a zip archive containing
-[version 2.1.1](https://github.com/signal-flags/signal-flag-images/archive/v2.1.1.zip)
+[version 2.2.0](https://github.com/signal-flags/signal-flag-images/archive/v2.2.0.zip)
 of our images.
 
 For other versions and a `.tar.gz` dowload option see the
@@ -87,7 +87,21 @@ included with the following options:
 - 4x3 and square shapes for alphabet flags
 - square alphabet flags in primary colours
 
-These images were created on 15 March 2021 using
-`signal-flags` version 2.0.2.
+## Changes
+
+**v2.2.0** _16 March 2021_
+
+- White elements are now 'white smoke' `#f5f5f5` (except for primary colour option).
+
+**v2.1.1** _15 March 2021_
+
+- Fixed path of bottom white stripe on 3rd Substitute.
+
+**v2.1.1** _15 March 2021_
+
+- Breaking: new images folder locations.
+
+These images were created on 16 March 2021 using
+`signal-flags` version 2.1.0.
 For more information and resources see the
 [Signal Flags website](https://signalflags.org/).

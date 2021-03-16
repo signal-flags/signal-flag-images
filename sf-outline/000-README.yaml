@@ -18,11 +18,11 @@ license:
   file: LICENSE
   link: https://unlicense.org/
 
-version: 2.1.0
+version: 2.2.0
 
 generated:
-  by: Signal Flags v2.0.2
-  date: 2021-03-15
+  by: Signal Flags v2.1.0
+  date: 2021-03-16
   link: https://github.com/signal-flags/signal-flags-js
 
 options:
