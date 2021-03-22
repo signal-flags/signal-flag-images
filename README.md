@@ -7,7 +7,7 @@
 ### Download
 
 Download a zip archive containing
-[version 2.2.0](https://github.com/signal-flags/signal-flag-images/archive/v2.2.0.zip)
+[version 3.0.0-dev](https://github.com/signal-flags/signal-flag-images/archive/v3.0.0-dev.zip)
 of our images.
 
 For other versions and a `.tar.gz` dowload option see the
@@ -20,7 +20,20 @@ Windows, MacOS, and most flavours of Linux.
 
 ### Locate the files you want
 
-The main designs are included in the four folders
+There are
+
+|                                          | A-Z and other flags            | 0-9 and answering pennants      | substitutes                      |
+| ---------------------------------------- | ------------------------------ | ------------------------------- | -------------------------------- |
+| Main set (natural colours with outlines) | `sf-rectangle-outline`         | `sf-pennant-outline`            | `sf-triangle-outline`            |
+| Alternative shapes                       | `sf-square-outline`            | `sf-long-outline`               |
+| Without outlines                         | `sf-rectangle-no-outline`      | `sf-pennant-no-outline`         | `sf-triangle-no-outline`         |
+| Alternative shapes without outlines      | `sf-square-no-outline`         | `sf-long-no-outline`            |
+| Primary colours without outlines         | `sf-square-no-outline-primary` | `sf-pennant-no-outline-primary` | `sf-triangle-no-outline-primary` |
+
+- sf-square-outline
+- sf-pennant-long-outline
+
+- sf-square-no-outline
 
 - sf-outline
 - sf-no-outline
@@ -76,22 +89,44 @@ used internationally:
 - Alphabet flags A-Z
 - Numeral pennants 0-9
 - Answering pennant (AP)
-- 1st, 2nd and 3rd substitute
-- Various flags defined in the Racing Rules of Sailing (Black Flag for starts,
-  Blue and Yellow flags for match racing and umpires' flags).
+- First, second, third and fourth substitutes.
+- All flags used in the Racing Rules of Sailing:
+  - orange flag for the start line
+  - black flag for starts
+  - blue and yellow flags for match racing
+  - umpires’ green and white, and red flags, and a black and white flag for team
+    racing
+  - +/-, red square and green triangle flags for moving marks.
 
 Images are provided in the SVG vector format and five sets of flag images are
 included with the following options:
 
-- with or without outlines for ease of use in print or on screen
-- 4x3 and square shapes for alphabet flags
-- square alphabet flags in primary colours
+- with or without outlines for ease of use in print or on screen against any
+  background
+- 4×3 or square shapes for alphabet flags
+- 2×1 or 3×1 ('long') shapes for pennants
+- square alphabet flags in primary colours for 3rd party compatibility.
 
 ## Changes
 
+**v3.0.0** _21 March 2021_
+Version 3 introduces a new directory structure which breaks compatibility with
+previous versions. Images are now sorted into separate directories described
+above (individual flag names have not changed however). In addition, v3 has the
+following new features and improvements:
+
+- 11 new flags
+- improvements to some designs for greater familiarity with 'real' flags and
+  pennants (I, P and S flags and 1 and 2 pennents)
+- additional 'long' pennants in 3×1 aspect ratio, again for greater familiarity
+  with the prototype (2×1 aspect ratio pennants are still available)
+- images are now grouped into directories by 'type' (flag, pennant, triangle),
+  avoiding duplication of identical image files in previous versions.
+
 **v2.2.0** _16 March 2021_
 
-- White elements are now 'white smoke' `#f5f5f5` (except for primary colour option).
+- White elements are now 'white smoke' `#f5f5f5` (except for primary colour
+  option).
 
 **v2.1.1** _15 March 2021_
 
@@ -101,7 +136,7 @@ included with the following options:
 
 - Breaking: new images folder locations.
 
-These images were created on 16 March 2021 using
-`signal-flags` version 2.1.0.
+These images were created on 22 March 2021 using
+`signal-flags` version 2.3.0-dev.
 For more information and resources see the
 [Signal Flags website](https://signalflags.org/).

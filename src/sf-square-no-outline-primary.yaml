@@ -1,20 +1,19 @@
 ---
-description:
-  short: Square flags in primary colours without outlines.
-  full: |
-    The alphabet (A-Z) flags are square.
+short: Square alphabet (A-Z) and other flags in primary RGB colours.
 
-    Images do not have outlines so do not work well on a white background.
+full: |
+  Alphabet (A-Z) flags and others including those used in the Racing Rules
+  of Sailing.
 
-    Primary colours have been used which may not look like real flags and
-    pennants on screen or when printed.
+  These flags are square. The images use primary RGB colours and are not
+  therefore recommended for use on screen or in print; they are provided for
+  compatibility with 3rd party resources.
 
-license:
-  spdx: Unlicense
-  file: LICENSE
-  link: https://unlicense.org/
+insert:
 
+# Options for `signal-flags` module.
 options:
-  colors: primary
-  outline: false
+  type: flag
   shape: square
+  outline: false
+  colors: primary

@@ -20,7 +20,7 @@ describe('The README.md file', function () {
   });
 
   it('should have the same version as package.json', function () {
-    const [, text, url] = readme.match(/\[version (.*)\]\(http.*v(.*).zip\)/);
+    const [, text, url] = readme.match(/\[version (.*)\]\(http.*\/v(.*).zip\)/);
 
     expect(text).to.equal(version);
     expect(url).to.equal(version);

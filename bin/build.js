@@ -6,108 +6,190 @@
  * to be done.
  */
 
-const { mkdirSync, readFileSync, readdirSync, writeFileSync } = require('fs');
+const { mkdir, readFile, readdir, writeFile } = require('fs/promises');
+const { join, basename } = require('path');
 
-const { resolve } = require('path');
 const { load } = require('js-yaml');
 
-// const SignalFlags = require('../../signal-flags-js');
-const SignalFlags = require('signal-flags');
+// Use local copy of `signal-flags` module.
+const SignalFlags = require('../../signal-flags-js');
+// Use `signal-flags` module from `node_modules`.
+// const SignalFlags = require('signal-flags');
 
 const { version } = require('../package.json');
 
 // Set some constants.
-const inBase = resolve(__dirname, '..', 'src');
-const outBase = resolve(__dirname, '..');
+const inBase = join(__dirname, '..', 'src');
+const outBase = join(__dirname, '..');
 
+const homepage = 'https://signalflags.org/';
+
+// Set metadata for file headers.
 const ts = new Date().toISOString();
 
 const generated = {
   date: ts.substring(0, 10),
-  link: 'https://github.com/signal-flags/signal-flags-js',
+  link: 'https://www.npmjs.com/package/signal-flags',
   version: SignalFlags.version,
-  // engine: `${process.release.name} ${process.version}`,
 };
 
-const licenseFile = readFileSync(resolve(__dirname, '..', 'LICENSE')).toString(
-  'utf-8'
-);
+const license = {
+  spdx: 'Unlicense',
+  link: 'https://unlicense.org/',
+};
 
-// Get all the build input files and build them.
-readdirSync(inBase).forEach((inFileName) => {
-  // Check it is a .yaml file and strip the extension.
-  if (!inFileName.substring(inFileName.length - 4) === '.yaml') {
-    console.log(`Ignoring ${inFileName}`);
-    return;
-  }
+const header = `---
+# This file describes a set of signal flag images.
+# See https://signalflags.org/.
+`;
 
-  // Parse the input YAML and start writing.
-  const outDirName = inFileName.substring(0, inFileName.length - 5);
-  const outPath = resolve(outBase, outDirName);
+const insert = `author: Signal Flags (https://signalflags.org/)
 
-  console.log('Writing to', outPath);
+license:
+  spdx: Unlicense
+  link: https://unlicense.org/
 
-  const inFile = readFileSync(resolve(inBase, inFileName)).toString('utf-8');
-  const build = load(inFile);
+version: ${version}
 
-  mkdirSync(outPath, { recursive: true });
-  const { options, description, license } = build;
+generated:
+  by: Signal Flags v${generated.version}
+  date: ${generated.date}
+  link: ${generated.link}`;
 
-  // Write files for each flag.
-  Object.entries(SignalFlags.all({ ...options, file: true })).forEach(
-    ([key, outFile]) => {
+const allSvg = {};
+
+const log = console;
+
+function getTypeFilter(type) {
+  return ([key]) => SignalFlags.isType(key, type);
+}
+
+// Write files for each flag.
+async function writeFlagFiles(dir, { id, options }) {
+  const filter = getTypeFilter(options.type);
+  let count = 0;
+  let size = 0;
+  // Collect svg for json file.
+  let svg = {};
+  const promises = [];
+
+  Object.entries(SignalFlags.all({ ...options, file: true }))
+    .filter(filter)
+    .forEach(([key, svgFile]) => {
+      const svgEl = SignalFlags.get(key, options || {});
       try {
-        SignalFlags.check(outFile, { file: true });
-      } catch (e) {
-        console.log('Error in SVG file for', key, e);
+        SignalFlags.check(svgFile, { file: true });
+        SignalFlags.check(svgEl);
+      } catch (err) {
+        console.log('Error in SVG for', { key, err, options });
       }
 
-      const outFileName = `${key}.svg`;
-      writeFileSync(resolve(outPath, outFileName), outFile);
-    }
-  );
+      ++count;
+      size += svgFile.length;
+      svg[key] = svgEl;
 
-  // Write the JSON file for all flags.
+      const outFileName = `${key}.svg`;
+      promises.push(writeFile(join(dir, outFileName), svgFile));
+    });
+
+  // Add the svg to the whole collection.
+  allSvg[id] = svg;
+
+  // Write the svg for this set.
   let json = {
+    id,
     meta: {
-      description,
+      homepage,
+      version,
       license,
       generated,
+      options,
     },
-    svg: SignalFlags.all(options || {}),
+    svg,
   };
 
   // Write the JSON file.
   let outFile = JSON.stringify(json, null, 2) + '\n';
-  writeFileSync(resolve(outPath, `100-svg.json`), outFile);
+  promises.push(writeFile(join(dir, `100-svg.json`), outFile));
 
-  // Write a JS file for web users.
-  // outFile = `SvgLoad.add(${outFile})`;
-  // fs.writeFileSync(resolve(outPath, `110-svg.js`), outFile);
+  await Promise.all(promises);
+  log.info(
+    'Written',
+    count,
+    'flag files total',
+    size,
+    'bytes and',
+    outFile.length,
+    'bytes of JSON to',
+    basename(dir)
+  );
+}
 
-  const header = [
-    '---',
-    '# This file describes a set of signal flag images.',
-    '# See https://github.com/signal-flags/signal-flag-images.',
-    '',
-  ].join('\n');
+// Re-write the README file.
+async function writeReadme(dir, readme, { id }) {
+  const idLine = `\nid: ${id}\n`;
+  const outFile = readme
+    .replace('---', header + idLine)
+    .replace('insert:', insert);
+  writeFile(join(dir, '000-README.yaml'), outFile);
+}
 
-  const insert = [
-    `version: ${version}`,
-    '',
-    'generated:',
-    `  by: Signal Flags v${generated.version}`,
-    `  date: ${generated.date}`,
-    `  link: ${generated.link}`,
-    // `  engine: ${generated.engine}`,
-    '',
-    'options:',
-  ].join('\n');
+async function writeOneSet(inFilePath) {
+  const readme = (await readFile(inFilePath)).toString('utf-8');
 
-  // Re-write the README file.
-  outFile = inFile.replace('---', header).replace('options:', insert);
-  writeFileSync(resolve(outPath, '000-README.yaml'), outFile);
+  // The `id` is the name of the file (without .yaml extension).
+  const id = basename(inFilePath).slice(0, -5);
+  const data = await load(readme);
 
-  // Copy over the LICENSE file.
-  writeFileSync(resolve(outPath, '010-LICENSE'), licenseFile);
-});
+  const dir = join(outBase, id);
+  await mkdir(dir, { recursive: true });
+
+  const promises = [
+    writeFlagFiles(dir, { id, ...data }),
+    writeReadme(dir, readme, { id }),
+  ];
+  return Promise.all(promises);
+}
+
+async function writeAllJson(outFilePath) {
+  let json = {
+    meta: {
+      homepage,
+      version,
+      license,
+      generated,
+    },
+    svg: allSvg,
+  };
+
+  // Write the JSON file.
+  let outFile = JSON.stringify(json, null, 2) + '\n';
+  const promise = writeFile(outFilePath, outFile);
+
+  await promise;
+  log.info('Written', outFile.length, 'bytes in all JSON file');
+  return promise;
+}
+
+async function main() {
+  // Get all the build input files and build them.
+  const promises = (await readdir(inBase)).map((inFileName) => {
+    // Check it is a .yaml file and strip the extension.
+    if (!inFileName.substring(inFileName.length - 4) === '.yaml') {
+      log.info(`Ignoring ${inFileName}`);
+      return;
+    }
+    return writeOneSet(join(inBase, inFileName));
+  });
+
+  // Wait for all the files to build.
+  await Promise.all(promises);
+
+  // Write the one file to rule them all.
+  await writeAllJson(join(outBase, 'svg.json'));
+
+  log.info('Image file build complete');
+}
+
+// Run the asynchronous `main` function.
+main();

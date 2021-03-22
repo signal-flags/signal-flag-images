@@ -1,0 +1,17 @@
+---
+short: Triangular substitute flags without outlines.
+
+full: |
+  Triangular substitute flags.
+
+  These flags have a 4×3 aspect ratio. Images do not have outlines so may not
+  work well on a white or light background. Designs and colours have been
+  selected to appear similar to real flags in common use.
+
+insert:
+
+# Options for `signal-flags` module.
+options:
+  type: triangle
+  outline: false
+  colors: primary
