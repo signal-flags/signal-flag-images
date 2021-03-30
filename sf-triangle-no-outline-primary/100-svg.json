@@ -2,15 +2,15 @@
   "id": "sf-triangle-no-outline-primary",
   "meta": {
     "homepage": "https://signalflags.org/",
-    "version": "3.0.0-dev",
+    "version": "3.0.0",
     "license": {
       "spdx": "Unlicense",
       "link": "https://unlicense.org/"
     },
     "generated": {
-      "date": "2021-03-22",
+      "date": "2021-03-29",
       "link": "https://www.npmjs.com/package/signal-flags",
-      "version": "2.3.0-dev"
+      "version": "2.4.0"
     },
     "options": {
       "type": "triangle",

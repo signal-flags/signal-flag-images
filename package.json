@@ -1,6 +1,6 @@
 {
   "name": "signal-flag-images",
-  "version": "3.0.0-dev",
+  "version": "3.0.0",
   "description": "International Code of Signals Flag images",
   "keywords": [
     "flags",
@@ -8,13 +8,6 @@
     "code flags",
     "signal flags"
   ],
-  "scripts": {
-    "ci": "npm run test",
-    "build": "rm -rf sf-* && npm run lint:fix && node ./bin/build && npm run lint",
-    "lint": "eslint . && prettier . --check",
-    "lint:fix": "eslint . --fix && prettier . --write",
-    "test": "npm run lint && mocha --verbose"
-  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/signal-flags/signal-flag-images.git"
@@ -24,14 +17,5 @@
   "bugs": {
     "url": "https://github.com/signal-flags/signal-flags/issues"
   },
-  "homepage": "https://signalflags.org/",
-  "devDependencies": {
-    "chai": "^4.3.4",
-    "eslint": "^7.22.0",
-    "eslint-plugin-mocha": "^8.1.0",
-    "js-yaml": "^4.0.0",
-    "mocha": "^8.3.2",
-    "prettier": "^2.2.1",
-    "signal-flags": "file:../signal-flags-js"
-  }
+  "homepage": "https://signalflags.org/"
 }

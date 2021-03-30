@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 180">
-<path fill="#fff" d="M0,0V90H150V25Z"/>
-<path fill="#000" d="M150,25V90H360V60Z"/>
-<path fill="#ff0" d="M150,155V90H360V120Z"/>
-<path fill="#f00" d="M0,180V90H150V155Z"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 540 180">
+<path fill="#fff" d="M0,0V90H225V25Z"/>
+<path fill="#000" d="M225,25V90H540V60Z"/>
+<path fill="#ff0" d="M225,155V90H540V120Z"/>
+<path fill="#f00" d="M0,180V90H225V155Z"/>
 </svg>

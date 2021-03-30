@@ -20,33 +20,20 @@ Windows, MacOS, and most flavours of Linux.
 
 ### Locate the files you want
 
-There are
+The image files are located in the following directories:
 
 |                                          | A-Z and other flags            | 0-9 and answering pennants      | substitutes                      |
 | ---------------------------------------- | ------------------------------ | ------------------------------- | -------------------------------- |
 | Main set (natural colours with outlines) | `sf-rectangle-outline`         | `sf-pennant-outline`            | `sf-triangle-outline`            |
-| Alternative shapes                       | `sf-square-outline`            | `sf-long-outline`               |
+| Alternative shapes                       | `sf-square-outline`            | `sf-short-outline`               |
 | Without outlines                         | `sf-rectangle-no-outline`      | `sf-pennant-no-outline`         | `sf-triangle-no-outline`         |
-| Alternative shapes without outlines      | `sf-square-no-outline`         | `sf-long-no-outline`            |
+| Alternative shapes without outlines      | `sf-square-no-outline`         | `sf-short-no-outline`            |
 | Primary colours without outlines         | `sf-square-no-outline-primary` | `sf-pennant-no-outline-primary` | `sf-triangle-no-outline-primary` |
 
-- sf-square-outline
-- sf-pennant-long-outline
+### Insert the images into a document
 
-- sf-square-no-outline
-
-- sf-outline
-- sf-no-outline
-- sf-square-outline
-- sf-square-no-outline
-
-We have also included images with square alphabet flags in primary colours; this
-is the format used on
-[WikiPedia](https://en.wikipedia.org/wiki/International_maritime_signal_flags)
-and (except for the swallowtail flags A and B) in
-[Flags Of the World](https://www.fotw.info/flags/xf~ics.html).
-
-- sf-square-no-outline-primary
+Use the functions of the editing software you are using to insert the images you
+want and resize them appropriately.
 
 ## Quick start 2 - use on a website
 
@@ -57,7 +44,7 @@ on the image itself:
 ```html
 <img
   height="120px"
-  src="https://cdn.jsdelivr.net/npm/signal-flag-images@2/sf-outline/a.svg"
+  src="https://cdn.jsdelivr.net/npm/signal-flag-images@3/sf-outline/a.svg"
 />
 ```
 
@@ -66,7 +53,7 @@ on the image itself:
 ```html
 <div style="width: 240px;">
   <img
-    src="https://cdn.jsdelivr.net/npm/signal-flag-images@2/sf-outline/n1.svg"
+    src="https://cdn.jsdelivr.net/npm/signal-flag-images@3/sf-outline/n1.svg"
   />
 </div>
 ```
@@ -94,8 +81,8 @@ used internationally:
   - orange flag for the start line
   - black flag for starts
   - blue and yellow flags for match racing
-  - umpires’ green and white, and red flags, and a black and white flag for team
-    racing
+  - umpires’ green, green and white and red flags, and a black and white flag
+    for team racing umpires
   - +/-, red square and green triangle flags for moving marks.
 
 Images are provided in the SVG vector format and five sets of flag images are

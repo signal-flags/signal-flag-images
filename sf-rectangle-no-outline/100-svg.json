@@ -2,15 +2,15 @@
   "id": "sf-rectangle-no-outline",
   "meta": {
     "homepage": "https://signalflags.org/",
-    "version": "3.0.0-dev",
+    "version": "3.0.0",
     "license": {
       "spdx": "Unlicense",
       "link": "https://unlicense.org/"
     },
     "generated": {
-      "date": "2021-03-22",
+      "date": "2021-03-29",
       "link": "https://www.npmjs.com/package/signal-flags",
-      "version": "2.3.0-dev"
+      "version": "2.4.0"
     },
     "options": {
       "type": "flag",
@@ -47,14 +47,14 @@
     "black": "<svg viewBox=\"0 0 240 180\">\n<path fill=\"#2d2926\" d=\"M0,0H240V180H0Z\"/>\n</svg>",
     "blackwhite": "<svg viewBox=\"0 0 240 180\">\n<path fill=\"#2d2926\" d=\"M0,0H120V180H240V90H0V0\"/>\n<path fill=\"#f5f5f5\" d=\"M240,0H120V180H0V90H240V0\"/>\n</svg>",
     "blue": "<svg viewBox=\"0 0 240 180\">\n<path fill=\"#005eb8\" d=\"M0,0H240V180H0Z\"/>\n</svg>",
+    "decrease": "<svg viewBox=\"0 0 240 180\">\n<path fill=\"#f5f5f5\" d=\"M0,0H240V180H0ZM75,81V99H165V81Z\"/>\n<path fill=\"#2d2926\" d=\"M75,81H165V99H75Z\"/>\n</svg>",
     "green": "<svg viewBox=\"0 0 240 180\">\n<path fill=\"#00965e\" d=\"M0,0H240V180H0Z\"/>\n</svg>",
     "greenwhite": "<svg viewBox=\"0 0 240 180\">\n<path fill=\"#00965e\" d=\"M0,0H60V180H120V0H180V180H240V135H0V90H240V45H0V0\"/>\n<path fill=\"#f5f5f5\" d=\"M240,0H180V180H120V0H60V180H0V45H240V90H0V135H240V0\"/>\n</svg>",
+    "increase": "<svg viewBox=\"0 0 240 180\">\n<path fill=\"#f5f5f5\" d=\"M0,0H240V180H0ZM111,45V81H75V99H111V135H129V99H165V81H129V45Z\"/>\n<path fill=\"#2d2926\" d=\"M111,45H129V81H165V99H129V135H111V99H75V81H111Z\"/>\n</svg>",
+    "orange": "<svg viewBox=\"0 0 240 180\">\n<path fill=\"#e37017\" d=\"M0,0H240V180H0Z\"/>\n</svg>",
     "red": "<svg viewBox=\"0 0 240 180\">\n<path fill=\"#c8102e\" d=\"M0,0H240V180H0Z\"/>\n</svg>",
-    "yellow": "<svg viewBox=\"0 0 240 180\">\n<path fill=\"#ffd100\" d=\"M0,0H240V180H0Z\"/>\n</svg>",
-    "plus": "<svg viewBox=\"0 0 240 180\">\n<path fill=\"#f5f5f5\" d=\"M0,0H240V180H0ZM105,22.5V75H52.5V105H105V157.5H135V105H187.5V75H135V22.5Z\"/>\n<path fill=\"#2d2926\" d=\"M105,22.5H135V75H187.5V105H135V157.5H105V105H52.5V75H105Z\"/>\n</svg>",
-    "minus": "<svg viewBox=\"0 0 240 180\">\n<path fill=\"#f5f5f5\" d=\"M0,0H240V180H0ZM52.5,75V105H187.5V75Z\"/>\n<path fill=\"#2d2926\" d=\"M52.5,75H187.5V105H52.5Z\"/>\n</svg>",
-    "port": "<svg viewBox=\"0 0 240 180\">\n<path fill=\"#f5f5f5\" d=\"M0,0H240V180H0ZM52.5,22.5V157.5H187.5V22.5Z\"/>\n<path fill=\"#c8102e\" d=\"M52.5,22.5H187.5V157.5H52.5Z\"/>\n</svg>",
-    "starboard": "<svg viewBox=\"0 0 240 180\">\n<path fill=\"#f5f5f5\" d=\"M0,0H240V180H0ZM120,22.5L52.5,157.5H187.5Z\"/>\n<path fill=\"#00965e\" d=\"M120,22.5L187.5,157.5H52.5Z\"/>\n</svg>",
-    "orange": "<svg viewBox=\"0 0 240 180\">\n<path fill=\"#e37017\" d=\"M0,0H240V180H0Z\"/>\n</svg>"
+    "toport": "<svg viewBox=\"0 0 240 180\">\n<path fill=\"#f5f5f5\" d=\"M0,0H240V180H0ZM75,30V150H165V30Z\"/>\n<path fill=\"#c8102e\" d=\"M75,30H165V150H75Z\"/>\n</svg>",
+    "tostarboard": "<svg viewBox=\"0 0 240 180\">\n<path fill=\"#f5f5f5\" d=\"M0,0H240V180H0ZM120,30L75,150H165Z\"/>\n<path fill=\"#00965e\" d=\"M120,30L165,150H75Z\"/>\n</svg>",
+    "yellow": "<svg viewBox=\"0 0 240 180\">\n<path fill=\"#ffd100\" d=\"M0,0H240V180H0Z\"/>\n</svg>"
   }
 }
