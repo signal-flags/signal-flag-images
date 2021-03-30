@@ -1,0 +1,33 @@
+{
+  "id": "sf-pennant-no-outline",
+  "meta": {
+    "homepage": "https://signalflags.org/",
+    "version": "3.0.0",
+    "license": {
+      "spdx": "Unlicense",
+      "link": "https://unlicense.org/"
+    },
+    "generated": {
+      "date": "2021-03-30",
+      "link": "https://www.npmjs.com/package/signal-flags",
+      "version": "2.4.0"
+    },
+    "options": {
+      "type": "pennant",
+      "outline": false
+    }
+  },
+  "svg": {
+    "n1": "<svg viewBox=\"0 0 540 180\">\n<path fill=\"#f5f5f5\" d=\"M0,0L540,60V120L0,180ZM135,45A45,45 0 0 0 90,90A45,45 0 1 0 135,45\"/>\n<circle fill=\"#c8102e\" cx=\"135\" cy=\"90\" r=\"45\"/>\n</svg>",
+    "n2": "<svg viewBox=\"0 0 540 180\">\n<path fill=\"#005eb8\" d=\"M0,0L540,60V120L0,180ZM135,45A45,45 0 0 0 90,90A45,45 0 1 0 135,45\"/>\n<circle fill=\"#f5f5f5\" cx=\"135\" cy=\"90\" r=\"45\"/>\n</svg>",
+    "n3": "<svg viewBox=\"0 0 540 180\">\n<path fill=\"#c8102e\" d=\"M0,0L157.5,17.5V162.5L0,180Z\"/>\n<path fill=\"#f5f5f5\" d=\"M157.5,17.5L315,35V145L157.5,162.5Z\"/>\n<path fill=\"#005eb8\" d=\"M315,35L540,60V120L315,145Z\"/>\n</svg>",
+    "n4": "<svg viewBox=\"0 0 540 180\">\n<path fill=\"#f5f5f5\" d=\"M198,22V158L162,162V18ZM0,72H540V108H0Z\"/>\n<path fill=\"#c8102e\" d=\"M0,0V72H162V18ZM198,22V72H540V60ZM198,158V108H540V120ZM0,180V108H162V162Z\"/>\n</svg>",
+    "n5": "<svg viewBox=\"0 0 540 180\">\n<path fill=\"#ffd100\" d=\"M0,0L225,25V155L0,180Z\"/>\n<path fill=\"#005eb8\" d=\"M225,25L540,60V120L225,155Z\"/>\n</svg>",
+    "n6": "<svg viewBox=\"0 0 540 180\">\n<path fill=\"#2d2926\" d=\"M0,0V90H540V60Z\"/>\n<path fill=\"#f5f5f5\" d=\"M0,180V90H540V120Z\"/>\n</svg>",
+    "n7": "<svg viewBox=\"0 0 540 180\">\n<path fill=\"#ffd100\" d=\"M0,0V90H540V60Z\"/>\n<path fill=\"#c8102e\" d=\"M0,180V90H540V120Z\"/>\n</svg>",
+    "n8": "<svg viewBox=\"0 0 540 180\">\n<path fill=\"#c8102e\" d=\"M198,22V158L162,162V18ZM0,72H540V108H0Z\"/>\n<path fill=\"#f5f5f5\" d=\"M0,0V72H162V18ZM198,22V72H540V60ZM198,158V108H540V120ZM0,180V108H162V162Z\"/>\n</svg>",
+    "n9": "<svg viewBox=\"0 0 540 180\">\n<path fill=\"#f5f5f5\" d=\"M0,0V90H225V25Z\"/>\n<path fill=\"#2d2926\" d=\"M225,25V90H540V60Z\"/>\n<path fill=\"#ffd100\" d=\"M225,155V90H540V120Z\"/>\n<path fill=\"#c8102e\" d=\"M0,180V90H225V155Z\"/>\n</svg>",
+    "n0": "<svg viewBox=\"0 0 540 180\">\n<path fill=\"#ffd100\" d=\"M0,0L157.5,17.5V162.5L0,180Z\"/>\n<path fill=\"#c8102e\" d=\"M157.5,17.5L315,35V145L157.5,162.5Z\"/>\n<path fill=\"#ffd100\" d=\"M315,35L540,60V120L315,145Z\"/>\n</svg>",
+    "ap": "<svg viewBox=\"0 0 540 180\">\n<path fill=\"#c8102e\" d=\"M0,0L108,12V168L0,180Z\"/>\n<path fill=\"#f5f5f5\" d=\"M108,12L216,24V156L108,168Z\"/>\n<path fill=\"#c8102e\" d=\"M216,24L324,36V144L216,156Z\"/>\n<path fill=\"#f5f5f5\" d=\"M324,36L432,48V132L324,144Z\"/>\n<path fill=\"#c8102e\" d=\"M432,48L540,60V120L432,132Z\"/>\n</svg>"
+  }
+}

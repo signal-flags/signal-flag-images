@@ -1,30 +1,35 @@
 ---
 # This file describes a set of signal flag images.
-# See https://github.com/signal-flags/signal-flag-images.
+# See https://signalflags.org/.
 
-description:
-  short: Square flags in primary colours without outlines.
-  full: |
-    The alphabet (A-Z) flags are square.
+id: sf-square-no-outline-primary
 
-    Images do not have outlines so do not work well on a white background.
+short: Square alphabet (A-Z) and other flags in primary RGB colours.
 
-    Primary colours have been used which may not look like real flags and
-    pennants on screen or when printed.
+full: |
+  Alphabet (A-Z) flags and others including those used in the Racing Rules
+  of Sailing.
+
+  These flags are square. The images use primary RGB colours and are not
+  therefore recommended for use on screen or in print; they are provided for
+  compatibility with some 3rd party resources.
+
+author: Signal Flags (https://signalflags.org/)
 
 license:
   spdx: Unlicense
-  file: LICENSE
   link: https://unlicense.org/
 
-version: 2.2.0
+version: 3.0.0
 
 generated:
-  by: Signal Flags v2.1.0
-  date: 2021-03-16
-  link: https://github.com/signal-flags/signal-flags-js
+  by: Signal Flags v2.4.0
+  date: 2021-03-30
+  link: https://www.npmjs.com/package/signal-flags
 
+# Options for `signal-flags` module.
 options:
-  colors: primary
-  outline: false
+  type: flag
   shape: square
+  outline: false
+  colors: primary

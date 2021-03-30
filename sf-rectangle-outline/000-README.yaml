@@ -1,0 +1,33 @@
+---
+# This file describes a set of signal flag images.
+# See https://signalflags.org/.
+
+id: sf-rectangle-outline
+
+short: Rectangular alphabet (A-Z) and other flags with outlines.
+
+full: |
+  Alphabet (A-Z) flags and others including those used in the Racing Rules
+  of Sailing.
+
+  These flags have a 4×3 aspect ratio. All images have outlines so they are
+  suitable for display or printing on any background including plain white.
+  Designs and colours have been selected to appear similar to real flags in
+  common use.
+
+author: Signal Flags (https://signalflags.org/)
+
+license:
+  spdx: Unlicense
+  link: https://unlicense.org/
+
+version: 3.0.0
+
+generated:
+  by: Signal Flags v2.4.0
+  date: 2021-03-30
+  link: https://www.npmjs.com/package/signal-flags
+
+# Options for `signal-flags` module.
+options:
+  type: flag

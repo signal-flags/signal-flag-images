@@ -1,0 +1,16 @@
+---
+short: Numeral pennants and AP with outlines.
+
+full: |
+  Numeral pennants and the Answering Pennant.
+
+  These pennants have a 3×1 aspect ratio and the fly is one third the height of
+  the hoist. All images have outlines so they are suitable for display or
+  printing on any background including plain white. Designs and colours have
+  been selected to appear similar to real pennants in common use.
+
+insert:
+
+# Options for `signal-flags` module.
+options:
+  type: pennant

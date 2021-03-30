@@ -1,0 +1,34 @@
+---
+# This file describes a set of signal flag images.
+# See https://signalflags.org/.
+
+id: sf-short-no-outline
+
+short: Shorter numeral pennants and AP with outlines.
+
+full: |
+  Numeral pennants and the Answering Pennant.
+
+  These pennants have a 2×1 aspect ratio and the fly is one third the height of
+  the hoist. Images do not have outlines so may not work well on a white or
+  light background. Designs and colours have been selected to appear similar to
+  real pennants in common use.
+
+author: Signal Flags (https://signalflags.org/)
+
+license:
+  spdx: Unlicense
+  link: https://unlicense.org/
+
+version: 3.0.0
+
+generated:
+  by: Signal Flags v2.4.0
+  date: 2021-03-30
+  link: https://www.npmjs.com/package/signal-flags
+
+# Options for `signal-flags` module.
+options:
+  type: pennant
+  shape: short
+  outline: false

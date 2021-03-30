@@ -1,0 +1,33 @@
+---
+# This file describes a set of signal flag images.
+# See https://signalflags.org/.
+
+id: sf-triangle-no-outline-primary
+
+short: Triangular substitute flags without outlines.
+
+full: |
+  Triangular substitute flags.
+
+  These flags have a 4×3 aspect ratio. The images use primary RGB colours and
+  are not therefore recommended for use on screen or in print; they are provided
+  for compatibility with some 3rd party resources.
+
+author: Signal Flags (https://signalflags.org/)
+
+license:
+  spdx: Unlicense
+  link: https://unlicense.org/
+
+version: 3.0.0
+
+generated:
+  by: Signal Flags v2.4.0
+  date: 2021-03-30
+  link: https://www.npmjs.com/package/signal-flags
+
+# Options for `signal-flags` module.
+options:
+  type: triangle
+  outline: false
+  colors: primary

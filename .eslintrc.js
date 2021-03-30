@@ -1,10 +1,10 @@
-// .prettierrc.js
+// .eslintrc.js
 
 module.exports = {
   env: {
-    node: true,
     commonjs: true,
     es2021: true,
+    node: true,
   },
   extends: ['eslint:recommended', 'plugin:mocha/recommended'],
   parserOptions: {
